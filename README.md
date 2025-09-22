@@ -8,23 +8,28 @@ Cara Install & Setup
 ```bash
 git clone https://github.com/usernamekamu/webpot.git
 cd webpot
+```
 
 **Buat Virtual Environment**
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
+```
 
 **Install Dependencies**
 ```bash
 pip install -r requirements.txt
+```
 
 **Clone Web**
 ```bash
 python cloner.py
+```
 
 **Jalankan Server**
 ```bash
 python trap_server.py
+```
 
 **Cara Menggunakan**
 - Pertama kita masukan link website yang mau kita salin ke cloner.py
