@@ -1,6 +1,6 @@
 WebPot
 
-WebPot adalah honeypot sederhana berbasis Python yang digunakan untuk mempelajari serangan web.
+WebPot adalah honeypot sederhana berbasis Python yang digunakan untuk mempelajari serangan web dan menyimpan payload serangan yang dilakukan di log.
 
 Cara Install & Setup
 
