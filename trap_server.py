@@ -5,7 +5,7 @@ import urllib.parse
 import json
 
 WEBROOT = "fake_web"   # folder tempat hasil clone disimpan
-LOG_FILE = "logs/honeypot.json"  # ganti ke JSON agar lebih terstruktur
+LOG_FILE = "logs/honeypot.json"
 
 app = Flask(__name__, static_folder=WEBROOT)
 os.makedirs("logs", exist_ok=True)
@@ -38,20 +38,6 @@ def log_event(ip, method, ua, path, params, data, raw_body, extra=""):
     }
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(json.dumps(event) + "\n")
-
-FAKE_LOGIN = """
-<html>
-<head><title>Login</title></head>
-<body>
-<h2>Admin Login</h2>
-<form method="POST">
-  Username: <input name="username"><br>
-  Password: <input name="password" type="password"><br>
-  <input type="submit" value="Login">
-</form>
-</body>
-</html>
-"""
 
 FAKE_PASSWD = """root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
