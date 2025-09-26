@@ -1,9 +1,9 @@
-WebPot
+## WebPot
 
 WebPot adalah honeypot sederhana berbasis Python yang digunakan untuk mempelajari serangan web dan menyimpan payload serangan yang dilakukan di log.
 Project ini merupakan hasil modifikasi dari [WebTrap](https://github.com/IllusiveNetworks-Labs/WebTrap), dengan beberapa fitur tambahan dan penyesuaian.
 
-Cara Install & Setup
+## Cara Install & Setup
 
 **Clone Repository**
 ```bash
@@ -32,7 +32,7 @@ python cloner.py
 python trap_server.py
 ```
 
-**Cara Menggunakan**
+## Cara Menggunakan
 - Pertama kita masukan link website yang mau kita salin ke cloner.py
 - Kedua kita jalankan cloner.py
 - Ketiga kita buka index.html di fake_web lalu kita ubah (form action=URL) dibagian login menjadi "/"
@@ -41,16 +41,16 @@ python trap_server.py
 - Keenam tes masukan kredensial
 - Ketujuh lihat log di logs/honeypot.JSON
 
-**Struktur Project**
+## Struktur Project
 - trap_server.py → file utama untuk menjalankan honeypot
 - cloner.py → script untuk meng-clone halaman target
 - fake_web/ → hasil clone halaman target
 - requirements.txt → daftar library yang diperlukan
 
-**Notice**
+## Notice
 Jika ingin response honeypot muncul di log jangan lupa ubah link (form action="URL target") dibagian form login menjadi "/"
 
-**Catatan**
+## Catatan
 - Gunakan hanya untuk pembelajaran / testing legal
 - Disarankan menjalankan di environment terisolasi (misal VM)
 
