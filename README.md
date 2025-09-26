@@ -1,6 +1,7 @@
 WebPot
 
 WebPot adalah honeypot sederhana berbasis Python yang digunakan untuk mempelajari serangan web dan menyimpan payload serangan yang dilakukan di log.
+Project ini merupakan hasil modifikasi dari [WebTrap](https://github.com/IllusiveNetworks-Labs/WebTrap), dengan beberapa fitur tambahan dan penyesuaian.
 
 Cara Install & Setup
 
@@ -52,3 +53,22 @@ Jika ingin response honeypot muncul di log jangan lupa ubah link (form action="U
 **Catatan**
 - Gunakan hanya untuk pembelajaran / testing legal
 - Disarankan menjalankan di environment terisolasi (misal VM)
+
+
+---
+
+## ⚖️ License
+
+WebPot berisi kode dari *WebTrap*, yang dilisensikan di bawah **BSD-3-Clause License**.  
+Lihat [LICENSE](LICENSE) untuk detail lengkap.
+
+Modifikasi dan kode tambahan adalah © 2025 [Nama Kamu] dan dapat didistribusikan di bawah lisensi pilihan Anda.  
+(Lihat [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) untuk daftar komponen pihak ketiga.)
+
+---
+
+## 🙏 Acknowledgements
+
+- [WebTrap](https://github.com/IllusiveNetworks-Labs/WebTrap) — project asli yang menjadi dasar WebPot.
+- Semua kontributor open-source yang membantu membangun ekosistem ini.
+
