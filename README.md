@@ -62,9 +62,6 @@ Jika ingin response honeypot muncul di log jangan lupa ubah link (form action="U
 WebPot berisi kode dari *WebTrap*, yang dilisensikan di bawah **BSD-3-Clause License**.  
 Lihat [LICENSE](LICENSE) untuk detail lengkap.
 
-Modifikasi dan kode tambahan adalah © 2025 [Nama Kamu] dan dapat didistribusikan di bawah lisensi pilihan Anda.  
-(Lihat [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) untuk daftar komponen pihak ketiga.)
-
 ---
 
 ## 🙏 Acknowledgements
