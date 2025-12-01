@@ -1,1 +1,0 @@
-!Jika ingin response honeypot muncul di log jangan lupa ubah link (form action="URL target") dibagian form login menjadi "/"
