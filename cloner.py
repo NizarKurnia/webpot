@@ -11,7 +11,7 @@ import pathlib
 from pythonjsonlogger import jsonlogger
 
 # defaults
-TARGET_URL = "https://cbt37.sman37.sch.id/"
+TARGET_URL = "http://example.com"
 SAVE_DIR = "fake_web"
 LOG_FILE = "logs/cloner.log"
 
