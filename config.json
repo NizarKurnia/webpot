@@ -1,0 +1,7 @@
+{
+  "target_url": "https://cbt37.sman37.sch.id/",
+  "webroot": "fake_web",
+  "honeypot_log": "logs/honeypot.json",
+  "cloner_log": "logs/cloner.log",
+  "port": 5050
+}
