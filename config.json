@@ -1,7 +1,7 @@
 {
-  "target_url": "https://cbt37.sman37.sch.id/",
+  "target_url": "https://elena.nurulfikri.ac.id/login/index.php",
   "webroot": "fake_web",
-  "honeypot_log": "logs/honeypot.json",
+  "honeypot_log": "logs/honeypot.jsonl",
   "cloner_log": "logs/cloner.log",
   "port": 5050
 }

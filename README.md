@@ -33,13 +33,22 @@ python trap_server.py
 ```
 
 ## Cara Menggunakan
-- Pertama kita masukan link website yang mau kita salin ke cloner.py
-- Kedua kita jalankan cloner.py
-- Ketiga kita buka index.html di fake_web lalu kita ubah (form action=URL) dibagian login menjadi "/"
-- Keempat Jalankan server 
-- Kelima klik link local server
-- Keenam tes masukan kredensial
-- Ketujuh lihat log di logs/honeypot.JSON
+- Siapkan `config.json` untuk mengatur `target_url`, `webroot`, `honeypot_log`, dan `port`. 
+- Clone halaman target menggunakan `cloner.py`. Contoh:
+
+```powershell
+python .\cloner.py --url "https://example.com" --out fake_web
+```
+
+- Jalankan honeypot server:
+
+```
+python .\trap_server.py
+```
+
+- Buka browser ke `http://localhost:<port>/` (default `5050`, atau sesuai `config.json`) dan gunakan antarmuka yang sudah dikloning.
+- Masukkan kredensial pada form (simulasi) untuk menghasilkan entri log.
+- Lihat log event di file log yang dikonfigurasi (`logs/honeypot.json` secara default). Logs tersimpan sebagai JSON Lines (satu objek JSON per baris) untuk kemudahan pemrosesan.
 
 ## Struktur Project
 - trap_server.py → file utama untuk menjalankan honeypot
@@ -48,12 +57,11 @@ python trap_server.py
 - requirements.txt → daftar library yang diperlukan
 
 ## Notice
-Jika ingin response honeypot muncul di log jangan lupa ubah link (form action="URL target") dibagian form login menjadi "/"
+- `cloner.py` sudah otomatis mengubah `form action` menjadi `/`; Tidak perlu mengedit `index.html` secara manual.
+- Log disimpan sebagai JSON Lines di file yang dikonfigurasi (`logs/honeypot.json` secara default).
 
 ## Catatan
 - Gunakan hanya untuk pembelajaran / testing legal
-- Disarankan menjalankan di environment terisolasi (misal VM)
-
 
 ---
 
