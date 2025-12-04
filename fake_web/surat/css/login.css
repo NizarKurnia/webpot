@@ -1,0 +1,140 @@
+.login-container {
+    height: 100vh;
+    color: var(--TEXT-COLOR-1);
+    display: grid;
+}
+
+.mail-logo {
+    color: var(--MAIN-COLOR-1);
+    height: 50px;
+    position: absolute;
+
+    display: grid;
+    place-content: center start;
+}
+
+.mail-logo div:first-child {
+    font-size: 25px;
+}
+
+.mail-logo div:nth-child(2) {
+    font-size: 15px;
+}
+
+.sttnf-logo {
+    width: 100%;
+    height: 160px;
+    border-bottom: var(--BORDER-1);
+
+    display: grid;
+    place-content: center;
+    margin-bottom: 20px;
+}
+
+.sttnf-logo img {
+    width: 120px;
+}
+
+.login-content {
+    background-color: white;
+    border-radius: var(--RADIUS-1);
+    border: var(--BORDER-1);
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 70px;
+    box-shadow: var(--BOX-SHADOW-2);
+    position: relative;
+    height: fit-content;
+}
+
+.input-text {
+    margin-bottom: 30px;
+}
+
+.login-content input {
+    padding: var(--PADDING-BUTTON);
+    color: var(--TEXT-COLOR-1);
+    box-sizing: border-box;
+    margin-top: 4px;
+    border: var(--BORDER-3);
+    border-radius: var(--RADIUS-2);
+    font-size: 13px;
+    width: 100%;
+}
+
+.login-content input:focus {
+    outline: var(--LIGHT-BLUE-BORDER);
+    outline-offset: 0;
+    border: var(--BORDER-3);
+}
+
+.login-content button {
+    padding: var(--PADDING-BUTTON);
+    background-color: var(--MAIN-COLOR-1);
+    border-radius: var(--RADIUS-2);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.login-content button:hover {
+    background-color: var(--MAIN-COLOR-2);
+}
+
+.alert {
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 450px) {
+    .login-content {
+        width: 100%;
+    }
+}
+
+/* Show Hide Password */
+.eyes-password {
+    position: absolute;
+    right: 0;
+    margin-right: 28px;
+    margin-top: 11px;
+    font-size: 20px;
+    color: var(--MAIN-COLOR-1);
+
+    user-select: none;
+    cursor: pointer;
+}
+
+/* Forgot Password */
+.forgot-password {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: var(--MAIN-COLOR-1);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Error Message */
+.mt-2 {
+    list-style-type: none !important;
+}
+
+/* Forgot Password */
+.login-content h2 {
+    color: var(--MAIN-COLOR-1);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.login-text {
+    margin-bottom: 20px;
+    text-align: justify;
+}

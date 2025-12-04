@@ -39,6 +39,10 @@ python trap_server.py
 ```powershell
 python .\cloner.py --url "https://example.com" --out fake_web
 ```
+Atau
+``` bash
+nano config.json
+```
 
 - Jalankan honeypot server:
 
@@ -47,7 +51,7 @@ python .\trap_server.py
 ```
 
 - Buka browser ke `http://localhost:<port>/` (default `5050`, atau sesuai `config.json`) dan gunakan antarmuka yang sudah dikloning.
-- Masukkan kredensial pada form (simulasi) untuk menghasilkan entri log.
+- Masukkan kredensial pada form untuk menghasilkan entri log.
 - Lihat log event di file log yang dikonfigurasi (`logs/honeypot.json` secara default). Logs tersimpan sebagai JSON Lines (satu objek JSON per baris) untuk kemudahan pemrosesan.
 
 ## Struktur Project

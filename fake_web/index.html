@@ -1,464 +1,50 @@
 <!DOCTYPE html>
 
-<html dir="ltr" lang="en" xml:lang="en">
+<html lang="en">
 <head>
-<title>e-Learning STT NF: Log in to the site</title>
-<link href="https://elena.nurulfikri.ac.id/pluginfile.php/1/theme_lambda/favicon/1748485449/favicon.ico" rel="shortcut icon"/>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="moodle, e-Learning STT NF: Log in to the site" name="keywords"/>
-<link href="https://elena.nurulfikri.ac.id/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" rel="stylesheet" type="text/css"/><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link href="https://elena.nurulfikri.ac.id/theme/styles.php/lambda/1748485449_1/all" rel="stylesheet" type="text/css"/>
-<script>
-//<![CDATA[
-var M = {}; M.yui = {};
-M.pageloadstarttime = new Date();
-M.cfg = {"wwwroot":"https:\/\/elena.nurulfikri.ac.id","homeurl":{},"sesskey":"ctfTDCgfjb","sessiontimeout":"7200","sessiontimeoutwarning":1200,"themerev":"1748485449","slasharguments":1,"theme":"lambda","iconsystemmodule":"core\/icon_system_standard","jsrev":"1748485453","admin":"admin","svgicons":true,"usertimezone":"Asia\/Jakarta","courseId":1,"courseContextId":2,"contextid":1,"contextInstanceId":0,"langrev":1764450967,"templaterev":"1748485456"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
-var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
-if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
-YUI_config = {"debug":false,"base":"https:\/\/elena.nurulfikri.ac.id\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/elena.nurulfikri.ac.id\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/elena.nurulfikri.ac.id\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/elena.nurulfikri.ac.id\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/elena.nurulfikri.ac.id\/theme\/yui_combo.php?m\/1748485453\/","combine":true,"comboBase":"https:\/\/elena.nurulfikri.ac.id\/theme\/yui_combo.php?","ext":false,"root":"m\/1748485453\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_sectioncompleted-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/elena.nurulfikri.ac.id\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/elena.nurulfikri.ac.id\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1748485453\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/elena.nurulfikri.ac.id\/lib\/javascript.php\/1748485453\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/elena.nurulfikri.ac.id\/lib\/javascript.php\/1748485453\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
-M.yui.loader = {modules: {}};
-
-//]]>
-</script>
-<meta content="" id="spadacourse" name="spadacourse"/>
-<meta content="3JXWytbU3dzF3NOHrdfW39yNhs3K4djdz9LYi5vh5c3QjYvT0dDX0ZWjz+jczZCD0tKGqZ7i" id="spadadata" name="spadadata"/>
-<meta content="https%3A%2F%2Felena.nurulfikri.ac.id" id="spada_cek_wwwroot" name="spada_cek_wwwroot"/>
-<!-- SPADA INDONESIA 1 START -->
-<script async="" defer="">(function(w,d,s,l,i){var dtspada=document.querySelector('meta[name="spadadata"]').content; var wwwroot=document.querySelector('meta[name="spada_cek_wwwroot"]').content; w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://spada.kemdikbud.go.id/moodle/plugin.js?version=3.4&www='+wwwroot+'&location='+encodeURIComponent(encodeURIComponent(String(window.location)))+'&data='+encodeURIComponent(dtspada)+'&ids='+Math.random().toString(36).substring(7)+'&id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','b898b67c-20bf-3282-8403-ac582d2d2204');
-</script>
-<!-- SPADA INDONESIA 1 END -->
-<meta content="noindex" name="robots"/> <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<!-- Google web fonts -->
-<link href="https://fonts.googleapis.com/css?family=PT+Sans:400%7CMontserrat:700" rel="stylesheet"/>
-<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login</title>
+<link href="https://lisa.nurulfikri.ac.id/surat/css/styles.css" rel="stylesheet"/>
+<link href="https://lisa.nurulfikri.ac.id/surat/css/login.css" rel="stylesheet"/>
+<script defer="" src="https://lisa.nurulfikri.ac.id/surat/js/login.js"></script>
 </head>
-<body class="format-site path-login dir-ltr lang-en yui-skin-sam yui3-skin-sam elena-nurulfikri-ac-id pagelayout-login course-1 context-1 notloggedin column-1" id="page-login-index">
-<div>
-<a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
-</div><script src="https://elena.nurulfikri.ac.id/lib/javascript.php/1748485453/lib/polyfills/polyfill.js"></script>
-<script src="https://elena.nurulfikri.ac.id/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://elena.nurulfikri.ac.id/theme/jquery.php/core/jquery-3.6.1.min.js"></script>
-<script src="https://elena.nurulfikri.ac.id/lib/javascript.php/1748485453/lib/javascript-static.js"></script>
-<script>
-//<![CDATA[
-document.body.className += ' jsenabled';
-//]]>
-</script>
-<meta content="" id="spadacourse" name="spadacourse">
-<meta content="3JXWytbU3dzF3NOHrdfW39yNhs3K4djdz9LYi5vh5c3QjYvT0dDX0ZWjz+jczZCD0tKGqZ7i" id="spadadata" name="spadadata"/>
-<meta content="https%3A%2F%2Felena.nurulfikri.ac.id" id="spada_cek_wwwroot" name="spada_cek_wwwroot"/>
-<!-- SPADA INDONESIA 1 START -->
-<!-- SPADA INDONESIA 1 END -->
-<div id="wrapper">
-<header class="clearfix" id="page-header">
-<div class="container-fluid" style="margin-top:-12px;">
-<div class="row-fluid">
-<div class="span12 login-header">
-<div class="profileblock centered-logo">
-<div id="top-login">
-<ul class="nav signin">
-<li class="dropdown">
-<a class="dropdown-toggle plus" data-toggle="dropdown" href=""><i aria-hidden="true" class="far fa-user"></i> Log in</a>
-<div class="dropdown-menu lambda-login">
-<form action="/" class="navbar-form" method="post">
-<div id="block-login" style="padding: 0;text-align: inherit;">
-<div id="user"><i class="fas fa-user"></i></div>
-<label class="lambda-sr-only" for="inputName">Username</label>
-<input name="logintoken" type="hidden" value="OmGNPy6DBoggAUhDuMx6j0f2sp7nbcdG"/>
-<input class="span2" id="inputName" name="username" placeholder="Username" style="width: 100%;display: block;margin-bottom: 5px;" type="text"/>
-<div id="pass"><i class="fas fa-unlock-alt"></i></div>
-<label class="lambda-sr-only" for="inputPassword">Password</label>
-<input class="span2" id="inputPassword" name="password" placeholder="Password" style="width: 100%;margin-bottom: 10px;display: block;" type="password"/>
-<button id="submit" style="width: 100%;background-image: none;font-size: 1.1em;display: block;margin-bottom: 5px;" type="submit"><i aria-hidden="true" class="fa fas fa-angle-right"></i>Log in</button>
+<body>
+<div class="web-flex-2">
+<div class="container2 login-container">
+<div class="mail-logo">
+<div><b>LISA</b> STT-NF</div>
+<div><b>L</b>ayanan <b>I</b>nformasi <b>S</b>urat <b>A</b>kademik</div>
 </div>
-<div class="forgotpass">
-<a href="https://elena.nurulfikri.ac.id/login/forgot_password.php" target="_self">Forgotten your username or password?</a>
+<div class="login-content">
+<div class="sttnf-logo">
+<img alt="" src="https://lisa.nurulfikri.ac.id/surat/img/Logo_STTNF.png"/>
+</div>
+<form action="/" method="POST">
+<input autocomplete="off" name="_token" type="hidden" value="EvIegxwieof8i5zOylnO41pJieODSnyHgi7nOn3S"/>
+<div class="input-text">
+<label class="block font-medium text-sm text-gray-700" for="email">
+    Email
+</label>
+<input autocomplete="username" autofocus="autofocus" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" id="email" name="email" required="required" type="email"/>
+<div class="alert"></div>
+</div>
+<div class="input-text">
+<label class="block font-medium text-sm text-gray-700" for="password">
+    Password
+</label>
+<input autocomplete="current-password" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" id="password" name="password" required="required" type="password"/>
+<span class="material-symbols-outlined eyes-password" id="eyes" onclick="eyesPassword()">visibility_off</span>
+<div class="alert"></div>
+</div>
+<button>Login</button>
+<div class="forgot-password">
+<a href="https://lisa.nurulfikri.ac.id/forgot-password">Forgot your password?</a>
 </div>
 </form>
 </div>
-</li>
-</ul>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="container-fluid">
-<div class="row-fluid">
-<div class="span12">
-<div class="logo-header">
-<a class="logo" href="https://elena.nurulfikri.ac.id" title="Home">
-<img alt="logo" class="img-responsive" src="//elena.nurulfikri.ac.id/pluginfile.php/1/theme_lambda/logo/1748485449/elena.svg" style="margin: 0 auto;display: block;"/> </a>
-</div>
-</div>
-</div>
-</div>
-</header>
-<header class="navbar">
-<nav class="navbar-inner">
-<div class="lambda-custom-menu container-fluid">
-<a class="brand" href="https://elena.nurulfikri.ac.id/?redirect=0">e-Learning</a> <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<div class="nav-collapse collapse">
-<ul class="nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#cm_submenu_1">Sistem Informasi Akademik<div class="caret"></div></a><ul class="dropdown-menu"><li><a href="https://siska.nurulfikri.ac.id\" target='\"_blank"'> Sistem Akademik</a></li><li><a href="https://library.nurulfikri.ac.id\" target='\"_blank"'> Perpustakaan</a></li><li><a href="https://repository.nurulfikri.ac.id\" target='\"_blank"'> Repository</a></li><li><a href="https://journal.nurulfikri.ac.id\" target='\"_blank"'> Jurnal</a></li></ul><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#cm_submenu_2">Aturan Akademik<div class="caret"></div></a><ul class="dropdown-menu"><li><a href="https://drive.google.com/file/d/1leAPGJB-5QLw5Ayo7dGBxM0LbQt8lH7d/view"> Kode Etik Dosen</a></li><li><a href="https://elena.nurulfikri.ac.id/mod/resource/view.php?id=54151"> Kode Etik Mahasiswa</a></li><li><a href="https://akademik.nurulfikri.ac.id\" target='\"_blank"'> Pedoman Akademik</a></li></ul><li class="dropdown langmenu"><a class="dropdown-toggle" data-toggle="dropdown" href="" title="Language">English ‎(en)‎<div class="caret"></div></a><ul class="dropdown-menu"><li><a href="https://elena.nurulfikri.ac.id/login/index.php?lang=id" title="Bahasa Indonesia ‎(id)‎">Bahasa Indonesia ‎(id)‎</a></li><li><a href="https://elena.nurulfikri.ac.id/login/index.php?lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li><li><a href="https://elena.nurulfikri.ac.id/login/index.php?lang=ja_kids" title="Japanese ‎(ja_kids)‎">Japanese ‎(ja_kids)‎</a></li><li><a href="https://elena.nurulfikri.ac.id/login/index.php?lang=zh_cn_wp" title="Workplace 简体中文版 ‎(zh_cn_wp)‎">Workplace 简体中文版 ‎(zh_cn_wp)‎</a></li><li><a href="https://elena.nurulfikri.ac.id/login/index.php?lang=ja_wp" title="Workplace準拠の日本語 ‎(ja_wp)‎">Workplace準拠の日本語 ‎(ja_wp)‎</a></li><li><a href="https://elena.nurulfikri.ac.id/login/index.php?lang=ar" title="العربية ‎(ar)‎">العربية ‎(ar)‎</a></li><li><a href="https://elena.nurulfikri.ac.id/login/index.php?lang=ar_wp" title="بالعربي workplace ‎(ar_wp)‎">بالعربي workplace ‎(ar_wp)‎</a></li><li><a href="https://elena.nurulfikri.ac.id/login/index.php?lang=ko" title="한국어 ‎(ko)‎">한국어 ‎(ko)‎</a></li><li><a href="https://elena.nurulfikri.ac.id/login/index.php?lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a></li><li><a href="https://elena.nurulfikri.ac.id/login/index.php?lang=zh_cn" title="简体中文 ‎(zh_cn)‎">简体中文 ‎(zh_cn)‎</a></li></ul></li></li></li></ul> <ul class="nav pull-right">
-<li></li>
-</ul>
-<form action="/" id="search">
-<label class="lambda-sr-only" for="coursesearchbox">Search courses</label>
-<input id="coursesearchbox" name="search" onblur="if(this.value=='') this.value='Search courses'" onfocus="if(this.value =='Search courses' ) this.value=''" type="text" value="Search courses"/>
-<button type="submit"><span class="lambda-sr-only">Submit</span></button>
-</form>
-</div>
-</div>
-</nav>
-</header>
-<div class="container-fluid" id="page">
-<div class="row-fluid" id="page-content">
-<section class="span12" id="region-main">
-<span class="notifications" id="user-notifications"></span><div role="main"><span id="maincontent"></span><div class="loginform">
-<h1 class="login-heading mb-4">Log in to e-Learning STT NF</h1>
-<form action="/" class="login-form" id="login" method="post">
-<input id="anchor" name="anchor" type="hidden" value=""/>
-<script>document.getElementById('anchor').value = location.hash;</script>
-<input name="logintoken" type="hidden" value="OmGNPy6DBoggAUhDuMx6j0f2sp7nbcdG"/>
-<div class="login-form-username form-group">
-<label class="sr-only" for="username">
-                    Username or email
-            </label>
-<input autocomplete="username" class="form-control form-control-lg" id="username" name="username" placeholder="Username or email" type="text" value=""/>
-</div>
-<div class="login-form-password form-group">
-<label class="sr-only" for="password">Password</label>
-<input autocomplete="current-password" class="form-control form-control-lg" id="password" name="password" placeholder="Password" type="password" value=""/>
-</div>
-<div class="login-form-submit form-group">
-<button class="btn btn-primary btn-lg" id="loginbtn" type="submit">Log in</button>
-</div>
-<div class="login-form-forgotpassword form-group">
-<a href="https://elena.nurulfikri.ac.id/login/forgot_password.php">Lost password?</a>
-</div>
-</form>
-<div class="login-divider"></div>
-<h2 class="login-heading">Some courses may allow guest access</h2>
-<form action="/" id="guestlogin" method="post">
-<input name="logintoken" type="hidden" value="OmGNPy6DBoggAUhDuMx6j0f2sp7nbcdG"/>
-<input name="username" type="hidden" value="guest">
-<input name="password" type="hidden" value="guest">
-<button class="btn btn-secondary" id="loginguestbtn" type="submit">Access as a guest</button>
-</input></input></form>
-<div class="login-divider"></div>
-<div class="d-flex">
-<div class="login-languagemenu">
-<div class="action-menu moodle-actionmenu" data-enhance="moodle-core-actionmenu" id="action-menu-0">
-<div class="menubar d-flex" id="action-menu-0-menubar">
-<div class="action-menu-trigger">
-<div class="dropdown">
-<a aria-controls="action-menu-0-menu" aria-expanded="false" aria-haspopup="true" aria-label="English ‎(en)‎" class="d-inline-block dropdown-toggle icon-no-margin" data-toggle="dropdown" href="javascript:void(0)" id="action-menu-toggle-0" role="button" tabindex="0">
-                                            
-                                            English ‎(en)‎
-                                                
-                                            <div class="caret"></div>
-</a>
-<div aria-labelledby="action-menu-toggle-0" class="dropdown-menu dropdown-menu-right menu" data-rel="menu-content" id="action-menu-0-menu" role="menu">
-<a aria-labelledby="actionmenuaction-1" class="dropdown-item menu-action" data-lang="id" href="https://elena.nurulfikri.ac.id/login/index.php?lang=id" lang="id" role="menuitem" tabindex="-1">
-<span class="menu-action-text" id="actionmenuaction-1">
-                                                                Bahasa Indonesia ‎(id)‎
-                                                            </span>
-</a>
-<a aria-labelledby="actionmenuaction-2" class="dropdown-item menu-action" href="#" role="menuitem" tabindex="-1">
-<span class="menu-action-text" id="actionmenuaction-2">
-                                                                English ‎(en)‎
-                                                            </span>
-</a>
-<a aria-labelledby="actionmenuaction-3" class="dropdown-item menu-action" data-lang="ja_kids" href="https://elena.nurulfikri.ac.id/login/index.php?lang=ja_kids" lang="ja_kids" role="menuitem" tabindex="-1">
-<span class="menu-action-text" id="actionmenuaction-3">
-                                                                Japanese ‎(ja_kids)‎
-                                                            </span>
-</a>
-<a aria-labelledby="actionmenuaction-4" class="dropdown-item menu-action" data-lang="zh_cn_wp" href="https://elena.nurulfikri.ac.id/login/index.php?lang=zh_cn_wp" lang="zh_cn_wp" role="menuitem" tabindex="-1">
-<span class="menu-action-text" id="actionmenuaction-4">
-                                                                Workplace 简体中文版 ‎(zh_cn_wp)‎
-                                                            </span>
-</a>
-<a aria-labelledby="actionmenuaction-5" class="dropdown-item menu-action" data-lang="ja_wp" href="https://elena.nurulfikri.ac.id/login/index.php?lang=ja_wp" lang="ja_wp" role="menuitem" tabindex="-1">
-<span class="menu-action-text" id="actionmenuaction-5">
-                                                                Workplace準拠の日本語 ‎(ja_wp)‎
-                                                            </span>
-</a>
-<a aria-labelledby="actionmenuaction-6" class="dropdown-item menu-action" data-lang="ar" href="https://elena.nurulfikri.ac.id/login/index.php?lang=ar" lang="ar" role="menuitem" tabindex="-1">
-<span class="menu-action-text" id="actionmenuaction-6">
-                                                                العربية ‎(ar)‎
-                                                            </span>
-</a>
-<a aria-labelledby="actionmenuaction-7" class="dropdown-item menu-action" data-lang="ar_wp" href="https://elena.nurulfikri.ac.id/login/index.php?lang=ar_wp" lang="ar_wp" role="menuitem" tabindex="-1">
-<span class="menu-action-text" id="actionmenuaction-7">
-                                                                بالعربي workplace ‎(ar_wp)‎
-                                                            </span>
-</a>
-<a aria-labelledby="actionmenuaction-8" class="dropdown-item menu-action" data-lang="ko" href="https://elena.nurulfikri.ac.id/login/index.php?lang=ko" lang="ko" role="menuitem" tabindex="-1">
-<span class="menu-action-text" id="actionmenuaction-8">
-                                                                한국어 ‎(ko)‎
-                                                            </span>
-</a>
-<a aria-labelledby="actionmenuaction-9" class="dropdown-item menu-action" data-lang="ja" href="https://elena.nurulfikri.ac.id/login/index.php?lang=ja" lang="ja" role="menuitem" tabindex="-1">
-<span class="menu-action-text" id="actionmenuaction-9">
-                                                                日本語 ‎(ja)‎
-                                                            </span>
-</a>
-<a aria-labelledby="actionmenuaction-10" class="dropdown-item menu-action" data-lang="zh_cn" href="https://elena.nurulfikri.ac.id/login/index.php?lang=zh_cn" lang="zh_cn" role="menuitem" tabindex="-1">
-<span class="menu-action-text" id="actionmenuaction-10">
-                                                                简体中文 ‎(zh_cn)‎
-                                                            </span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="divider border-left align-self-center mx-3"></div>
-<button class="btn btn-secondary" data-modal="alert" data-modal-content-str='["cookiesenabled_help_html", "core"]' data-modal-title-str='["cookiesenabled", "core"]' type="button">Cookies notice</button>
-</div>
-</div></div> </section>
-</div>
-<a class="back-to-top" href="#top"><span class="lambda-sr-only">Back</span></a>
-</div>
-<footer class="container-fluid" id="page-footer">
-<div class="row-fluid">
-<aside class="span4 block-region" data-blockregion="footer-left" data-droptarget="1" id="block-region-footer-left"></aside><aside class="span4 block-region" data-blockregion="footer-middle" data-droptarget="1" id="block-region-footer-middle"></aside><aside class="span4 block-region" data-blockregion="footer-right" data-droptarget="1" id="block-region-footer-right"></aside> </div>
-<div class="footerlinks">
-<div class="row-fluid">
-<p class="helplink"></p>
-<div class="footnote"><p></p><p>STT Terpadu Nurul Fikri</p><p>Kampus A: Jl. Situ Indah no.116, Cimanggis, Depok<br/></p><p>Kampus B: Jl. Raya Lenteng Agung No.20, Jagakarsa<br/></p><p>Telpon: 021 - 786 3191<br/></p><p>Email: info@nurulfikri.ac.id<br/></p><p></p></div> </div>
-<div class="socials row-fluid">
-<div class="span6">
-<div class="social_contact">
-<nobr><i class="far fa-bookmark"></i>  <a class="social_contact_web" href="https://www.nurulfikri.ac.id" target="_blank">https://www.nurulfikri.ac.id</a></nobr>
-<nobr><i class="far fa-envelope"></i>  <a class="social_contact_mail" href="mailto:elena@nurulfikri.ac.id">elena@nurulfikri.ac.id</a></nobr>
-</div>
-</div>
-<div class="span6">
-<div class="social_icons pull-right">
-<a class="social fab fa-facebook" href="https://facebook.com/sttterpadunf" target="_blank"> </a> <a class="social fab fa-twitter" href="https://twitter.com/STTTerpaduNF1" target="_blank"> </a> <a class="social fab fa-instagram" href="https://www.instagram.com/sttnf_official" target="_blank"> </a> <a class="social fab fa-youtube" href="https://www.youtube.com/user/STTNF" target="_blank"> </a> </div>
-</div>
-</div>
-</div><div class="logininfo">You are not logged in.</div> </footer>
-</div>
-<script>(function($) {
-	$(document).ready(function(){
-
-	function refreshlogs() {
-		$('.reportbuilder-table .dropdown .dropdown-menu a.dropdown-item[data-action="report-action-popup"]').each(function(){
-			var action = $(this).attr("data-popup-action");
-			var replace = action.indexOf("\\\/");
-			if (replace != -1) {
-				var newattrval = action.replaceAll("\\","");
-				$(this).attr("data-popup-action",newattrval);
-			}
-		});
-	}
-
-	$(".path-grade.ver-m41 .tertiary-navigation-selector .select-menu .dropdown-menu li:first-child li.dropdown-item:nth-child(5)").remove();
-	$(".path-grade.ver-m41 .tertiary-navigation-selector .select-menu .dropdown-menu li:first-child li.dropdown-item:nth-child(6)").remove();
-	$(".path-grade.ver-m41 .block.block_settings .block_tree.list li.contains_branch:first-child li.item_with_icon:nth-child(4)").remove();
-	$(".path-grade.ver-m41 .block.block_settings .block_tree.list li.contains_branch:first-child li.item_with_icon:nth-child(5)").remove();
-	
-	$(".message.clickable.d-flex").last().focus({focusVisible: true});
-
-	$(".format-tiles.editing li.course-section .course-content-item-content").removeClass("show");
-	$(".path-course.format-topics .course-content-item-content.collapse.show").addClass("in");
-	$(".path-course.format-weeks .course-content-item-content.collapse.show").addClass("in");
-	$(".editing .cm_action_menu .dropdown-item.editing_moveleft").click(function(event) {
-		event.preventDefault();
-		var listItem = $(this).closest("li");
-		listItem.removeClass("indented");
-	});
-	$(".initials-selector .initialswidget").on("click", function(){
-		$(".initials-selector .initialsdropdown.dropdown-menu").toggleClass("show");
-	});
-	$(".initials-selector .initialsdropdown .btn-outline-secondary").on("click", function(){
-		$(".initials-selector .initialsdropdown.dropdown-menu").removeClass("show");
-	});		
-
-	$('.select-menu ul.dropdown-menu li.dropdown-item').each(function(){
-		const url = $(this).attr("data-value");
-		this.innerHTML = '<a href="'+ url +'">' + this.innerHTML +'</a>';
-	});
-
-	var pageURL = $(location).attr("href");
-	if (pageURL.indexOf("message/index.php?view=contactrequests") >= 0) {
-		$(".nav-pills .nav-item:first-child:not(.checked)").removeClass("active");
-		$(".nav-pills .nav-item:nth-child(2):not(.checked)").addClass("active");
-		$(".nav-pills .nav-item").addClass("checked");
-
-		$(".body-container .tab-content .tab-pane:nth-child(2):not(.checked)").addClass("in");
-		$(".body-container .tab-content .tab-pane:first-child:not(.checked)").removeClass("in");
-		$(".body-container .tab-content .tab-pane").addClass("checked");
-
-		$(".nav-pills .nav-item .nav-link[data-action='show-contacts-section']").on("click", function(){
-			$(".body-container .tab-content .tab-pane").removeClass("show");
-		});
-		$(".nav-pills .nav-item .nav-link[data-action='show-requests-section']").on("click", function(){
-			$(".body-container .tab-content .tab-pane").removeClass("show");
-		});
-	}
-
-	if (pageURL.indexOf("admin/tasklogs.php") >= 0) {
-		refreshlogs();
-		$(document).on('click', '.pagination .page-link, a[data-action="showcount"]', function(event) {
-			setTimeout(function() {
-				refreshlogs();
-			}, 500);
-		});
-		$(document).on('click', '#filters input[type="submit"]', function(event) {
-			setTimeout(function() {
-				refreshlogs();
-			}, 500);
-		});
-	}
-
-	var offset = 1;
-    var duration = 1;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
-        } else {
-            jQuery('.back-to-top').fadeOut(duration);
-        }
-	});
-	jQuery('.back-to-top').click(function(event) {
-    	event.preventDefault();
-    	jQuery('html, body').animate({scrollTop: 0}, duration);
-    	return false;
-	});
-
-	var pathname = window.location.href;
-	var index = pathname.indexOf("&section=");
-	var backlink = pathname.substring(0,index);
-	$("#back-to-main-link").attr('href', backlink);
-	
-	$(document).on('click', 'button[data-toggle="dropdown"], .action-menu a[data-toggle="dropdown"], .lambda-custom-menu .nav-collapse.in a[data-toggle="dropdown"], .ml-auto.dropdown a[data-toggle="dropdown"], .tertiary-navigation-selector .dropdown.select-menu .btn[data-toggle="dropdown"]', function(event) {
-		event.preventDefault();
-  		$(this).next('.dropdown-menu').slideToggle("fast");
-	});
-	$(document).on('click', function (e) {
-    	if(!$('button[data-toggle="dropdown"]').is(e.target) && !$('button[data-toggle="dropdown"]').has(e.target).length && !$('a[data-toggle="dropdown"]').is(e.target) && !$('a[data-toggle="dropdown"]').has(e.target).length && !$('.btn[data-toggle="dropdown"]').is(e.target) && !$('.btn[data-toggle="dropdown"]').has(e.target).length && !$(".atto_hasmenu").is(e.target) && !$(".reportbuilder-filters-sidebar *").is(e.target)){
-        	$('.dropdown .dropdown-menu:not(.lambda-login)').slideUp("fast");
-    	}                       
-	});
-	$(document).on('click', '.modchooser button[data-action="show-option-summary"], .modchooser button.closeoptionsummary', function(event) {
-		$('.carousel-item[data-region="modules"]').toggleClass("active");
-		$('.carousel-item[data-region="help"]').toggleClass("active");
-	});
-	$(document).on('click', '#dynamictabs-tabs .nav-item', function(event) {
-		$('#editor-tab').removeClass("active");
-	});
-
-	});
-}) (jQuery);
-
-
-var togglesidebar = function() {
-  var sidebar_open = Y.one('body').hasClass('sidebar-open');
-  if (sidebar_open) {
-    Y.one('body').removeClass('sidebar-open');
-    M.util.set_user_preference('theme_lambda_sidebar', 'sidebar-closed');
-  } else {
-    Y.one('body').addClass('sidebar-open');
-    M.util.set_user_preference('theme_lambda_sidebar', 'sidebar-open');
-  }
-};
-
-M.theme_lambda = M.theme_lambda || {};
-M.theme_lambda.sidebar =  {
-  init: function() {
-    Y.one('body').delegate('click', togglesidebar, '#sidebar-btn');
-  }
-};</script><script>
-//<![CDATA[
-var require = {
-    baseUrl : 'https://elena.nurulfikri.ac.id/lib/requirejs.php/1748485453/',
-    // We only support AMD modules with an explicit define() statement.
-    enforceDefine: true,
-    skipDataMain: true,
-    waitSeconds : 0,
-
-    paths: {
-        jquery: 'https://elena.nurulfikri.ac.id/lib/javascript.php/1748485453/lib/jquery/jquery-3.6.1.min',
-        jqueryui: 'https://elena.nurulfikri.ac.id/lib/javascript.php/1748485453/lib/jquery/ui-1.13.2/jquery-ui.min',
-        jqueryprivate: 'https://elena.nurulfikri.ac.id/lib/javascript.php/1748485453/lib/requirejs/jquery-private'
-    },
-
-    // Custom jquery config map.
-    map: {
-      // '*' means all modules will get 'jqueryprivate'
-      // for their 'jquery' dependency.
-      '*': { jquery: 'jqueryprivate' },
-      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
-      '*': { process: 'core/first' },
-
-      // 'jquery-private' wants the real jQuery module
-      // though. If this line was not here, there would
-      // be an unresolvable cyclic dependency.
-      jqueryprivate: { jquery: 'jquery' }
-    }
-};
-
-//]]>
-</script>
-<script src="https://elena.nurulfikri.ac.id/lib/javascript.php/1748485453/lib/requirejs/require.min.js"></script>
-<script>
-//<![CDATA[
-M.util.js_pending("core/first");
-require(['core/first'], function() {
-require(['core/prefetch'])
-;
-require(["media_videojs/loader"], function(loader) {
-    loader.setUp('en');
-});;
-
-require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-    CustomEvents.define('#single_select692d2af0eb62b3', [CustomEvents.events.accessibleChange]);
-    $('#single_select692d2af0eb62b3').on(CustomEvents.events.accessibleChange, function() {
-        var ignore = $(this).find(':selected').attr('data-ignore');
-        if (typeof ignore === typeof undefined) {
-            $('#single_select_f692d2af0eb62b2').submit();
-        }
-    });
-});
-;
-
-    require(['core_form/submit'], function(Submit) {
-        Submit.init("loginbtn");
-            Submit.init("loginguestbtn");
-    });
-;
-M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
-M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
-M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});
-    M.util.js_complete("core/first");
-});
-//]]>
-</script>
-<script src="https://elena.nurulfikri.ac.id/theme/javascript.php/lambda/1748485449/footer"></script>
-<script>
-//<![CDATA[
-M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","morehelp":"More help","loadinghelp":"Loading...","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
-//]]>
-</script>
-<script>
-//<![CDATA[
-(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
-});
-M.util.help_popups.setup(Y);
- M.util.js_pending('random692d2af0eb62b14'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random692d2af0eb62b14'); });
-})();
-//]]>
-</script>
-</meta></body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
 </html>

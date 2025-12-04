@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+:root {
+    /* COLOR */
+    --MAIN-COLOR-1: #3C8DBC;
+    --MAIN-COLOR-2: #367FA9;
+    --LINK-HOVER: #72AFD2;
+    --TEXT-COLOR-1: #333;
+    --TEXT-COLOR-2: #777;
+    --LIGHT-BLUE-1: #63A4C9;
+    --LIGHT-GRAY-1: #F5F5F5;
+    --LIGHT-GRAY-2: #E7E7E7;
+    --LIGHT-GRAY-3: #c1c1c1;
+    --GREEN: #00B087;
+    --YELLOW: #F9C43B;
+    --YELLOW-2: #d6a530;
+    --RED: #FC4F4F;
+    --RED-HOVER: #df1a1a;
+    --TABLE-HOVER: #e6f6ff;
+
+    /* PADDING */
+    --PADDING-BUTTON: 8px;
+
+    /* BORDER RADIUS */
+    --RADIUS-1: 9px;
+    --RADIUS-TOP-1: 9px 9px 0 0;
+    --RADIUS-BOTTOM-1: 0 0 9px 9px;
+    --RADIUS-LEFT-1: 9px 0 0 9px;
+    --RADIUS-RIGHT-1: 0 9px 9px 0;
+    --RADIUS-2: 6px;
+
+    /* BORDER */
+    --BORDER-1: solid 1px #cdcdcd;
+    --BORDER-2: solid 1px #eee;
+    --BORDER-3: solid 1px #ADADAD;
+    --BORDER-4: solid 1px #818181;
+    --LIGHT-BLUE-BORDER: 3px solid #9bd7fa;
+    --TABLE-BORDER-1: solid 2px #cdcdcd;
+    --TABLE-BORDER-2: solid 1px #dcdcdc;
+
+    /* BOX SHADOW */
+    --BOX-SHADOW-1: 0px 6px 15px 0px #0000002b;
+    --BOX-SHADOW-2: 3px 3px 5px 0px #0d35501c;
+
+    /* LINE HEIGHT */
+    --LINE-HEIGHT: 1.8;
+
+    /* NAVBAR SIZE */
+    --NAV-HEIGHT: 50px;
+    --NAV-PADDING: 0 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button, input, textarea, a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+select {
+    cursor: pointer;
+}
+
+body {
+    background-color: #e4ecf7;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+
+.web-flex-1 {
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh;
+    margin: 0;
+    background-color:  #e4ecf7;
+}
+
+.web-flex-2 {
+    background: linear-gradient(140deg, #d9e6f8, #f7fafd, #acc4eb);
+    height: 100vh;
+}
+
+input, button, textarea {font-family: 'Inter', sans-serif;}
+
+.content {flex: 1;}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+/* CONTAINER */
+.container1 {
+    margin: 0 auto;
+    width: 1140px;
+}
+
+.container2 {
+    margin: 0 auto;
+    width: 950px;
+}
+
+@media screen and (max-width: 1200px){
+    .container1 {width: 940px;}
+    .container2 {width: 760px;}
+}
+
+@media screen and (max-width: 992px) {
+    .container1, .container2 {width: 720px;}
+}
+
+@media screen and (max-width: 768px) {
+    .container1,
+    .container2 {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .web-flex-2 {
+        height: 650px;
+    }
+}
+
